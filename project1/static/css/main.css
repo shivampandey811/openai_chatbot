@@ -1,0 +1,153 @@
+.user-message {
+    color: rgb(0, 0, 0);
+    font-size:1.2rem;
+    justify-content:end;
+    display:flex;
+    width: auto;
+    margin-bottom:10px;
+    border:1px solid rgb(0, 0, 0);
+    background: white;
+
+    border-radius:10px;
+    padding:5px 5px;
+    padding-right: 1rem;
+    margin-left:26rem;
+}
+
+.chatbot-message {    
+    border-radius:10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1.2rem;
+    justify-content:start;
+    margin-bottom:1rem;
+    border:1px solid black;
+    background: radial-gradient(circle, rgba(193,194,200,1) 0%, rgba(252,251,252,1) 100%);
+    padding:0.5rem 0.5rem;
+    margin-right:1rem;
+}
+.new_chat_box{
+    background-color: black;
+    margin-top: -10px;
+    height: 100%;
+    
+}
+.new_chat_btn{
+    color:white;
+    background-color: black;
+    width:100%;
+    margin-top: 12px;
+    padding: 15px ;
+    border: 1px solid white;
+}
+.icons_column{
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.capa_abt{
+    margin: 0 10px;
+    border: 1px solid grey;
+}
+
+
+
+
+
+@media (max-width: 425px) {
+ 
+    .black_chat_box {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: black;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+  
+    .menu-icon::before,
+    .menu-icon::after,
+    .menu-icon span {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: white;
+      transition: transform 0.3s ease;
+    }
+  
+    .menu-icon::before {
+      top: 0;
+      transform: translateY(-8px);
+    }
+  
+    .menu-icon::after {
+      bottom: 0;
+      transform: translateY(8px);
+    }
+  
+    .menu-icon span {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .menu-open .menu-icon::before {
+      transform: translateY(0) rotate(45deg);
+    }
+  
+    .menu-open .menu-icon::after {
+      transform: translateY(0) rotate(-45deg);
+    }
+  
+    .menu-open .menu-icon span {
+      display: none;
+    }
+  
+    .menu-open .menu-icon {
+      background-color: transparent;
+    }
+  
+    .menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: black;
+      z-index: 9998;
+      display: none;
+    }
+  
+    .menu-open .menu {
+      display: block;
+    }
+  
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  
+    .menu ul li {
+      margin-bottom: 20px;
+    }
+  
+    .menu ul li a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+  
